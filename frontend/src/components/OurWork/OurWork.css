@@ -1,0 +1,27 @@
+img.our-work-landing {
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    display: flex;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+
+.right{
+    flex-direction: row-reverse;
+}
+.pink {
+    background-color: #FFE6F0;
+}
+
+.card img {
+    width: 40%;
+    height: auto;
+    margin-left: 2rem;
+}
+
+.card-content {
+    padding: 0px 2rem;
+}
