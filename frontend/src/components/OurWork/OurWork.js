@@ -1,7 +1,6 @@
 import React from 'react'
 import Card from './Card'
 import './OurWork.css';
-import ourwork from '../../media/ourwork.png'
 import contactA from '../../media/contact-a.png'
 import contactB from '../../media/contact-b.png'
 import contactC from '../../media/contact-c.png'
@@ -9,11 +8,16 @@ import contactC from '../../media/contact-c.png'
 const OurWork = () => {
     return (
         <>
-            <img 
-            alt="our work landing collage" 
-            src={ourwork}
-            className="our-work-landing"
-            />
+            <div className="our-work-landing">
+                <div className="gallery">
+                  <div className="left-image"/>
+                  <div className="middle-image">
+                    <div className="top-middle-image"/>
+                    <div className="bottom-middle-image"/>
+                  </div>
+                  <div className="right-image"/>
+                </div>
+            </div>
             <Card
             img={contactA}
             header = "PROVIDING FIRST AID TRAINING AROUND THE WORLD." 

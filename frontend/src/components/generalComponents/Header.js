@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 const Header = () => {
     return (
         <nav className="header">
-            <Link to="/">
+            <Link to="/" className="logo-link">
               <h1 className="logo"><span>+</span>FIONITA’S PROJECT</h1>
             </Link>
             <ul className="header-links">

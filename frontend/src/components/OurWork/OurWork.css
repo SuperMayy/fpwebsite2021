@@ -1,10 +1,60 @@
-img.our-work-landing {
-    width: 100%;
+div.our-work-landing {
+    background: url("../../media/ourwork.png") no-repeat;
     height: auto;
+    background-size:100% auto;
+    padding-top:220px;
+    padding-bottom: 150px;
+}
+
+.gallery{
+    height: 450px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left-image {
+    background: url("../../media/left-gallery.png") no-repeat;
+    height: 450px;
+    width:400px;
+    background-size:100% 100%;
+}
+
+.middle-image{
+    height: 450px; 
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-middle-image{
+    background: url("../../media/top-middle-gallery.png") no-repeat;
+    height: 200px;
+    width: 200px;
+    background-size:100% 100%;
+}
+
+.bottom-middle-image{
+    background: url("../../media/bottom-middle-gallery.png") no-repeat;
+    height: 200px;
+    width: 200px;
+    background-size:100% 100%;
+}
+
+.right-image{
+    background: url("../../media/right-gallery.png") no-repeat;
+    height: 450px;
+    width: 400px;
+    background-size:100% 100%;
 }
 
 .card {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 4rem;
     padding-bottom: 5rem;
 }
@@ -17,11 +67,19 @@ img.our-work-landing {
 }
 
 .card img {
-    width: 40%;
+    width: 500px;
     height: auto;
     margin-left: 2rem;
+    margin-bottom: 50px;
 }
 
 .card-content {
     padding: 0px 2rem;
+    width: 550px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .right-image {
+    display: none;
+    }
 }
