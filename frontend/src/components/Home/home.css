@@ -196,7 +196,8 @@ html, body {
 }
 
 .picture-container{
-    background: grey; 
+    background: url("../../media/nigerian-christmas.png") no-repeat;
+    background-size: 100% 100%;
     width: 35%;
 }
 
@@ -312,4 +313,42 @@ button.donate-card.input {
 
 .donate-card-left {
     padding-top: 50px;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    padding-bottom: 70px;
+    margin-left: 75px;
+    color: #ffffff;
+}
+
+.text-container a{
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 700px) {
+    .picture-container{
+        display: none;
+      }
+      
+      .donation-card-image {
+          display: none;
+      }
+
+      .donation-text {
+        width: 110%;
+        padding: 20%;
+       }
+      
+      .donation-card {
+          background-color: #FFE6F0;
+      }
+      
+      .top-section-donation-type {
+          width: 154%;
+          font-size: 0.8rem;
+      }
 }

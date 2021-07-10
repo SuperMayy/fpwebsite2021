@@ -45,3 +45,28 @@ form.contact-form {
 img.contact-page-left {
     width: 500px;
 }
+
+.success-message{
+    background: rgb(18, 132, 202);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 5px 0px;
+}
+
+.form-validation{
+    position: relative;
+    top: -20px;
+    color: rgb(173, 4, 4);
+}
+
+textarea{
+    margin-bottom: 1.25rem;
+}
+
+.send-contact-details{
+    padding: 15px 0px;
+    border: none;
+    background: #80FFCC;
+    margin-bottom: 1.25rem;
+}

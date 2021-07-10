@@ -6,10 +6,10 @@ const HowWeHelp = () => {
         <div className="how-we-help">
             <h1>HOW WE HELP</h1>
             <div className="card-container">
-                <Card name="The United Kingdom"/>
-                <Card name="Kenya"/>
-                <Card name="Nigeria"/>
-                <Card name="Remote"/>
+                <Card name="The United Kingdom" extraClass="one"/>
+                <Card name="Kenya" extraClass="two"/>
+                <Card name="Nigeria" extraClass="three"/>
+                <Card name="Remote" extraClass="four"/>
             </div>
         </div>
     )

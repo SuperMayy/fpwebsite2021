@@ -38,6 +38,12 @@ a {
     color: #000;
 }
 
+@media only screen and (max-width: 800px) {
+    button.donate {
+        flex-grow: 1;
+    }
+}
+
 /* Footer styling */
 .footer{
     padding-top: 115px;
@@ -128,6 +134,26 @@ i.fab:hover{
 .card-top{
     background-color: white;
     height: 270px;
+}
+
+.card-top.one{
+    background: url("../../media/how-we-help-1.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.card-top.two{
+    background: url("../../media/how-we-help-2.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.card-top.three{
+    background: url("../../media/how-we-help-3.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.card-top.four{
+    background: url("../../media/how-we-help-4.png") no-repeat;
+    background-size: 100% 100%;
 }
 
 .card-bottom{
