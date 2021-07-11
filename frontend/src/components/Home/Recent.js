@@ -9,7 +9,7 @@ const Recent = () => {
                 <div className="picture-container"></div>
                 <div className="text-container">
                     <h1 className="text-container-header">Short Description of what we did in Nigeria.</h1>
-                    <Link>Read More</Link>
+                    <Link to="/">Read More</Link>
                 </div>
             </div>
         </div>

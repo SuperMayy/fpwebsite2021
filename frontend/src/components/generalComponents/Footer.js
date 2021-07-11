@@ -25,10 +25,10 @@ function Footer() {
             </ul>
             <hr/>
             <div className="footer-middle" style={{textAlign: "center"}}>
-              <a href="https://m.facebook.com/fionitasproject/?tsid=0.30914701511751264&source=result"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://www.linkedin.com/in/fionita%E2%80%99s-project-cic-a28374197/"><i class="fab fa-linkedin-in"></i></a>
-              <a href="https://twitter.com/fionitasproject"><i class="fab fa-twitter"></i></a>
-              <a href="https://www.instagram.com/fionitasproject/?igshid=ak0imsih2srt"><i class="fab fa-instagram"></i></a>
+              <a href="https://m.facebook.com/fionitasproject/?tsid=0.30914701511751264&source=result"><i className="fab fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/in/fionita%E2%80%99s-project-cic-a28374197/"><i className="fab fa-linkedin-in"></i></a>
+              <a href="https://twitter.com/fionitasproject"><i className="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/fionitasproject/?igshid=ak0imsih2srt"><i className="fab fa-instagram"></i></a>
             </div>
             <p>2020 Fionita's Poject</p>
         </div>

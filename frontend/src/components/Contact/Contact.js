@@ -13,7 +13,7 @@ const Contact = () => {
                 <h2>Contact Us</h2>
                 <p>Email us at <a href = "mailto: admin@fionitasproject.org" style={{color: "#80FFCC"}}>
                     admin@fionitasproject.org.</a> Don't forget to download the appropriate 
-                    <Link style={{color: "#80FFCC"}}> documents</Link> and attach them. Or you can use our contact form below.
+                    <Link to="/forms" style={{color: "#80FFCC"}}> documents</Link> and attach them. Or you can use our contact form below.
                 </p>
               </div>
               <Form />

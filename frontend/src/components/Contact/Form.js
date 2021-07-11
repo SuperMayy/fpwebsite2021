@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import axios from 'axios'
 
 const Form = () => {
     const [values, setValues] = useState({
@@ -26,9 +27,29 @@ const Form = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if(values.fullname && values.email && values.reason){
-            setValid(true);
+            setValid(true)
+            setSubmitted(true)
+
+            const payload = {
+                fullname: values.fullname,
+                email: values.email,
+                reason: values.reason
+            }
+
+            axios({
+                url: '/api/sent',
+                method: 'POST',
+                data: payload
+            })
+            .then(()=>{
+                console.log('Data has been sent to the server')
+            })
+            .catch(()=>{
+                console.log('Internal server error')
+            })   
+        } else {
+            alert('Please fill out all the form fields')
         }
-        setSubmitted(true);
     }
 
     return (

@@ -16,7 +16,7 @@ const About = () => {
             <div className="out-story">
                 <h1 className="our-story-header">Our Story</h1>
                 <dic className="time-line">
-                    <div class="timeline-left">
+                    <div className="timeline-left">
                       <div className="timelline-content one">
                           <div className="timeline-text-area">
                             <h3>Heading</h3>
