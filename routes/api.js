@@ -1,8 +1,13 @@
 const express = require('express');
+const app = express();
+const cors = require('cors')
+
+//deal with cors error
+app.use(cors());
 
 const router = express.Router();
 const nodemailer = require('nodemailer');
-const stripe = require('stripe')('sk_test_');
+const stripe = require('stripe')(`${process.env.STRIPE_SECRET_KEY}`);
 
 //Test API
 router.get('/user', (req, res) => {
@@ -36,8 +41,8 @@ router.post('/sent', (req, res) => {
     port: 587,
     secureConnection: false, // TLS requires secureConnection to be false
     auth: {
-        user: 'testerformreciver9920@outlook.com', // like : abc@gmail.com
-        pass: 'Thisisapassword9920'           // like : pass@123
+        user: process.env.EMAIL, // like : abc@gmail.com
+        pass: process.env.PASSWORD           // like : pass@123
     },
     tls: {
       ciphers:'SSLv3'
@@ -61,11 +66,11 @@ router.post('/sent', (req, res) => {
 });
 
 //Payment routes
- //Stripe
- router.post('/create-checkout-session', async (req, res) => {
+//Stripe
+router.post('/create-checkout-session', async (req, res) => {
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   console.log('Donation: ', JSON.stringify(req.body));
   const donation = req.body.amount*100;
-  console.log(donation);
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ['card'],
     line_items: [
@@ -85,7 +90,11 @@ router.post('/sent', (req, res) => {
     cancel_url: 'https://www.youtube.com/',
   });
 
-  res.json({ id: session.id });
+  res.send({
+    retStatus : 303,
+    redirectTo: session.url,
+    msg : 'sent' 
+  });
 });
 
 

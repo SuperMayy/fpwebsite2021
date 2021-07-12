@@ -1,8 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { loadStripe } from '@stripe/stripe-js';
-// Make sure to call `loadStripe` outside of a component’s render to avoid
-// recreating the `Stripe` object on every render.
-const stripePromise = loadStripe('pk_test_51HNmqhBRlnUVKZqLxvciKAeVTJXA6EA48nsHWoiml6EksDI4jqCjgytR9R3hlPkMwFIMgjXG3P4yb7QbIODKd8TR00g3KlvJVs');
+import axios from 'axios'
 
 const DonationButton = ({amount, classRef}) => {
     const [donationAmount, setDonationAmount] = useState(null)
@@ -13,34 +10,32 @@ const DonationButton = ({amount, classRef}) => {
             //Create payload that will be sent to the backend
           const payload = {
             amount: donationAmount.amount
-          }
-          // Get Stripe.js instance
-          const stripe = stripePromise;
+        }
 
-          // Call your backend to create the Checkout Session
-          const response = fetch('/api/create-checkout-session', { 
-           method: 'POST',
-           headers: {
-            "Accept": "application/json",
-            "Content-Type": "Application/json"
-           },
-           body: JSON.stringify(payload)
-           });
+        let headers = new Headers();
 
-           const session = response.json();
+        headers.append('Content-Type', 'application/json');
+        headers.append('Accept', 'application/json');
 
-            // When the customer clicks on the button, redirect them to Checkout.
-            const result = stripe.redirectToCheckout({
-              sessionId: session.id,
-            });
+        headers.append('Access-Control-Allow-Origin', 'http://localhost:3000');
+        headers.append('Access-Control-Allow-Credentials', 'true');
 
-            if (result.error) {
-                // If `redirectToCheckout` fails due to a browser or network
-                // error, display the localized error message to your customer
-                // using `result.error.message`.
-                alert(`${result.error.message}`);
-              }
-
+        axios({
+            url: '/api/create-checkout-session',
+            method: 'POST',
+            data: payload,
+            headers: headers,
+        })
+        .then((res)=>{
+            const reply = res.data;
+            if((reply.msg === "sent") && reply.retStatus === 303){
+                console.log('Data has been sent to the server')
+                window.location = reply.redirectTo;
+            }
+        })
+        .catch(()=>{
+            console.log('Internal server error')
+        })  
         }
     }, [donationAmount]);
 
@@ -49,11 +44,11 @@ const DonationButton = ({amount, classRef}) => {
     }
 
     return (
-        <div>
+        <>
             <button className={`donate-card ${classRef}`} onClick={()=>{handleButtonClick(amount)}}>
                {typeof amount == "number"  ? '£' : null} {amount}
             </button>
-        </div>
+        </>
     )
 }
 
