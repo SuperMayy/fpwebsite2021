@@ -1,24 +1,9 @@
 const express = require('express');
-const app = express();
-const cors = require('cors')
-
-//deal with cors error
-app.use(cors());
-
 const router = express.Router();
 const nodemailer = require('nodemailer');
 const stripe = require('stripe')(`${process.env.STRIPE_SECRET_KEY}`);
 
-//Test API
-router.get('/user', (req, res) => {
-    const data = {
-        username: 'John doe',
-        age: 5
-    };
-    res.json(data);
-});
-
-//Actual Routes
+//Routes
 
 //Send Route for Contact Form
 router.post('/sent', (req, res) => {
