@@ -39,7 +39,7 @@ router.post('/sent', (req, res) => {
       from: '"Fionita\'s Project" <testerformreciver9920@outlook.com>', // sender address
       to: `testerformreciver9920@outlook.com`, // list of receivers
       subject: "Fionita\'s Project Website Contact Form Message", // Subject line
-      text: "Hello world?", // plain text body
+      text: "Hello world", // plain text body
       html: output, // html body
     };
     
