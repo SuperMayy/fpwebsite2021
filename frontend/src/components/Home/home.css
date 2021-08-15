@@ -242,7 +242,7 @@ html, body {
 .donation-container{
     height: auto;
     background: #ffffff;
-    padding: 230px 0px;
+    padding: 130px 0px;
 }
 
 .donation-card{
@@ -302,6 +302,10 @@ button.donate-card.input {
     color: #222222;
 }
 
+.donation-container h1 {
+    padding-bottom: 70px;
+}
+
 .donation-card-container{
     display: flex;
     flex-wrap: wrap;
@@ -328,6 +332,10 @@ button.donate-card.input {
 .text-container a{
     color: #ffffff;
 }
+
+/* .info-main{
+    padding: 5px;
+} */
 
 @media only screen and (max-width: 700px) {
     .picture-container{

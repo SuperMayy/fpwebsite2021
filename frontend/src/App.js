@@ -10,6 +10,12 @@ import Cookies from './components/generalComponents/FooterLinks/Cookies'
 import Jobs from './components/generalComponents/FooterLinks/Jobs' 
 import Privacy from './components/generalComponents/FooterLinks/Privacy'
 import TandC from './components/generalComponents/FooterLinks/TandC'
+import WorkShops from './components/WorkShops/WorkShops';
+import Kenya from './components/LinkedPages/Kenya';
+import Nigeria from './components/LinkedPages/Nigeria';
+import Recent from './components/LinkedPages/Recent';
+import Remote from './components/LinkedPages/Remote';
+import UK from './components/LinkedPages/UK';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 const App = () => {
   return (
@@ -26,6 +32,12 @@ const App = () => {
           <Route path="/jobs" component={Jobs} />
           <Route path="/privacy" component={Privacy} />
           <Route path="/tandc" component={TandC} />
+          <Route path="/workshops" component={WorkShops} />
+          <Route path="/kenya" component={Kenya} />
+          <Route path="/nigeria" component={Nigeria} />
+          <Route path="/recent" component={Recent} />
+          <Route path="/remote" component={Remote} />
+          <Route path="/uk" component={UK} />
         </Switch>
       <Footer/>
     </div>

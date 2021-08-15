@@ -9,6 +9,7 @@ const OurWork = () => {
     return (
         <>
             <div className="our-work-landing">
+              <h1>Our Work</h1>
                 <div className="gallery">
                   <div className="left-image"/>
                   <div className="middle-image">

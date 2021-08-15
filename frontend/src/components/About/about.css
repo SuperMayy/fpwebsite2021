@@ -94,3 +94,7 @@
         padding-bottom: 150px;
     }
 }
+
+.timeline-text-area p{
+    font-size: 0.87rem;
+}

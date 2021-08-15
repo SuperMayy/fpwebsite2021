@@ -1,6 +1,7 @@
 import React from 'react'
 import './generalStyle.css'
 import {Link} from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const Header = () => {
     return (
@@ -11,10 +12,11 @@ const Header = () => {
             <ul className="header-links">
                 <Link to="/"><li>Home</li></Link>
                 <Link to="/our-work"><li>Our Work</li></Link>
+                <Link to="/workshops"><li>Workshops</li></Link>
                 <Link to="/about"><li>About</li></Link>
                 <Link to="/contact"><li>Contact</li></Link>
             </ul>
-            <button className="donate">Donate</button>
+            <HashLink to="/#donate-here"><button className="donate" >Donate</button></HashLink>
         </nav>
 
     )

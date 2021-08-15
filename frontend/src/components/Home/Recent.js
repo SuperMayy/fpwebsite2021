@@ -8,8 +8,8 @@ const Recent = () => {
             <div className="recent-card">
                 <div className="picture-container"></div>
                 <div className="text-container">
-                    <h1 className="text-container-header">Short Description of what we did in Nigeria.</h1>
-                    <Link to="/">Read More</Link>
+                    <h1 className="text-container-header">We donated food to 20 families in Lagos!</h1>
+                    <Link to="/recent">Read More</Link>
                 </div>
             </div>
         </div>

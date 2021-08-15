@@ -3,7 +3,8 @@ import DonationButton from './DonationButton'
 
 const Donation = () => {
     return (
-        <div className="donation-container">
+        <div className="donation-container" id="donate-here">
+            <h1>Donate</h1>
             <div className="donation-card">
                 <div className="donation-card-image" />
                 <div className="donation-card-content">

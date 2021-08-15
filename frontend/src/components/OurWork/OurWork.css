@@ -2,8 +2,13 @@ div.our-work-landing {
     background: url("../../media/ourwork.png") no-repeat;
     height: auto;
     background-size:100% auto;
-    padding-top:220px;
     padding-bottom: 150px;
+}
+
+div.our-work-landing h1 {
+    padding-top: 70px;
+    padding-bottom: 150px;
+    text-align: center;
 }
 
 .gallery{

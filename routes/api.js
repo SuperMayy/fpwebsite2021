@@ -1,7 +1,8 @@
 const express = require('express');
+const keys = require('../config/keys')
 const router = express.Router();
 const nodemailer = require('nodemailer');
-const stripe = require('stripe')(`${process.env.STRIPE_SECRET_KEY}`);
+const stripe = require('stripe')(keys.stripeSecretKey);
 
 //Routes
 
@@ -26,8 +27,8 @@ router.post('/sent', (req, res) => {
     port: 587,
     secureConnection: false, // TLS requires secureConnection to be false
     auth: {
-        user: process.env.EMAIL, // like : abc@gmail.com
-        pass: process.env.PASSWORD           // like : pass@123
+        user: keys.email, // like : abc@gmail.com
+        pass: keys.password          // like : pass@123
     },
     tls: {
       ciphers:'SSLv3'
@@ -71,8 +72,8 @@ router.post('/create-checkout-session', async (req, res) => {
       },
     ],
     mode: 'payment',
-    success_url: 'https://www.google.com/',
-    cancel_url: 'https://www.youtube.com/',
+    success_url: 'https://www.fionitasproject.org/',
+    cancel_url: 'https://www.fionitasproject.org/',
   });
 
   res.send({
