@@ -35,8 +35,8 @@ const OurWork = () => {
             />
             <Card 
             img={contactC}
-            header = "Talk About Work In Nigeria." 
-            body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            header = "FEEDING FAMILIES IN NIGERIA" 
+            body="During the Covid-19 pandemic, we were able to donate food to 20 families in Lagos, with the help of your donations. Our donations helped local residents like Promise Chukwuemeka. She hasn’t worked as a teacher since the pandemic, as schools have closed. Living alone with two children to support, she finds it difficult to support them."
             />
         </>
     )

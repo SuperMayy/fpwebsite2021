@@ -1,6 +1,7 @@
 import React from 'react'
 import IMG1 from '../../media/needle.jpeg'
 import IMG2 from '../../media/signs.jpg'
+import { HashLink } from 'react-router-hash-link';
 
 const Hero = () => {
     return (
@@ -14,9 +15,9 @@ const Hero = () => {
                     how to prevent it's loss. From Nigeria, to Kenya, <br></br>
                     to the UK. we help those in need.
                 </p>
-                <button >
+                <HashLink to="/#donate-here"><button >
                     MAKE A DIFFERENCE
-                </button>
+                </button></HashLink>
                 <img alt="injection" className="image1-home" src={IMG1}></img>
                 <img alt="group with certificates" className="image2-home" src={IMG2}></img>
             </div>
