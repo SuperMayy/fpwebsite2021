@@ -16,9 +16,9 @@ const HomePageInfo = () => {
                     <p className="info-main">
                     The project involves teaching first aid in underprivileged communities, whilst providing life-saving medical equipment in educational institutions, religious institutions, hospitals, government offices and other public settings where required. This will be a global effort, as the project will be done in various British and African locations. 
                     </p>
-                    <p className="info-sub">
+                    {/* <p className="info-sub">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br></br> tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
+                    </p> */}
                 </div>
             </div>
         </div>
