@@ -4,6 +4,7 @@ nav.header{
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 1rem;
+    padding-top: 10px;
 }
 
 .logo span{
@@ -11,25 +12,35 @@ nav.header{
     font-size: 2rem;
 }
 
+.logo{
+    display: none;
+}
+
 ul.header-links{
     display: flex;
     list-style: none;
     width: 510px;
-    padding-top: 1rem;
+    padding-top: 3rem; 
 }
 
 ul.header-links li {
-    padding-right: 30px;
+    padding-right: 20px;
+    font-size: 1rem;
+}
+
+img {
+    vertical-align: middle;
+    width: 15rem;
 }
 
 
 button.donate{
     padding: 5px 20px;
-    height: 40px;
+    height: 60px;
     border: none;
     color: #ffffff;
     background: #FF0066;
-    margin-top: 0.75rem;
+    margin-top: 2.5rem;
     width: 140px;
 }
 
@@ -41,6 +52,16 @@ a {
 @media only screen and (max-width: 800px) {
     button.donate {
         flex-grow: 1;
+    }
+    img.logo-img {
+        margin-left: 40%;
+    }
+    /* .logo{
+        display: block;
+    } */
+
+    button.donate {
+        margin-left: 60%;
     }
 }
 
@@ -172,3 +193,4 @@ a.logo-link:hover {
 .logo:hover{
     color: #FF0066;
 }
+

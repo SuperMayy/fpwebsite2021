@@ -95,6 +95,16 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .about-landing img {
+        display: none;
+    }
+
+    .about-landing h1 {
+        padding-bottom: 3rem;
+    }
+}
+
 .timeline-text-area p{
     font-size: 0.87rem;
 }

@@ -16,6 +16,7 @@ import Nigeria from './components/LinkedPages/Nigeria';
 import Recent from './components/LinkedPages/Recent';
 import Remote from './components/LinkedPages/Remote';
 import UK from './components/LinkedPages/UK';
+import Portfolio from './components/Portfolio/Portfolio';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
           <Route path="/recent" component={Recent} />
           <Route path="/remote" component={Remote} />
           <Route path="/uk" component={UK} />
+          <Route path="/portfolio" component={Portfolio} />
         </Switch>
       <Footer/>
     </div>

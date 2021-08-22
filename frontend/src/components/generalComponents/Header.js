@@ -2,12 +2,14 @@ import React from 'react'
 import './generalStyle.css'
 import {Link} from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import LOGO from '../../media/fplogo.png'
 
 const Header = () => {
     return (
         <nav className="header">
             <Link to="/" className="logo-link">
               <h1 className="logo"><span>+</span>FIONITA’S PROJECT</h1>
+              <img src={LOGO} alt="logo" className="logo-img"/>
             </Link>
             <ul className="header-links">
                 <Link to="/"><li>Home</li></Link>

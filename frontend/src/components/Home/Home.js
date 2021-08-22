@@ -1,5 +1,6 @@
 import React from 'react'
-import Hero from './Hero'
+import Powerpoint from '../generalComponents/Powerpoint'
+// import Hero from './Hero'
 import HomePageInfo from './HomePageInfo'
 import HowWeHelp from './HowWeHelp'
 import Recent from './Recent'
@@ -10,7 +11,8 @@ import './home.css'
 const Home = () => {
     return (
         <div className="Home">
-          <Hero />
+          <Powerpoint/>
+          {/* <Hero /> */}
           <HomePageInfo />
           <HowWeHelp />
           <Recent />

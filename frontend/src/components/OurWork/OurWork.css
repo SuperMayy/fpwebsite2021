@@ -88,3 +88,21 @@ div.our-work-landing h1 {
     display: none;
     }
 }
+
+@media only screen and (max-width: 800px) {
+    .gallery{
+        display: none;
+    }
+    div.our-work-landing {
+        padding-bottom: 0px;
+    }
+
+    div.our-work-landing h1{
+        padding-bottom: 0px;
+        padding-top: 10px;
+    }
+
+    div.our-work-landing {
+        background: none;
+    }
+}

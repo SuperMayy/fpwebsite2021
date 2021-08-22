@@ -15,7 +15,7 @@ const Donation = () => {
                     <div className="donation-text">
                         <h3>Help Make A Diffrence</h3>
                         <p style={{padding: "20px"}}>Help us to support communities and save lives.
-                        How much would you like to donate?#
+                        How much would you like to donate?
                         </p>
                     </div>
                     <div className="donation-card-container">
