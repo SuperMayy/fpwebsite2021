@@ -9,7 +9,7 @@ import CPR5 from '../../media/cpr5.jpg'
 const Remote = () => {
     return (
         <div className="article">
-            <h1>Advice during the COVID pnademic</h1>
+            <h1>Advice during the COVID pandemic</h1>
             <br/><br/>
             <img className="article-img" alt="Impact od donations in nigeria" src={CPR1} />
             <br/><br/>
