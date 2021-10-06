@@ -30,6 +30,10 @@ const Jobs = () => {
                     <li>Attention to detail and good judgment</li>
                 </ul>
             </p><br/><br/>
+            <a href="https://www.linkedin.com/jobs/view/2735206844/?refId=o1%2FUhh8P3qOOfJ50pCsN1A%3D%3D&trackingId=ymuIT0CRSCHhfEzKoZFA3w%3D%3D">
+                <button className="donate">Apply Now</button>
+            </a>
+            <br/><br/>
         </div>
     )
 }
