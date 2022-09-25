@@ -133,11 +133,11 @@ i.fab:hover{
     color: #fff
 }
 
-.footer a:hover, .forms-text-area a {
+.footer a:hover, .forms-text-area a, a.fundraising-link {
     color: #FF0066;
 }
 
-.header a:hover{
+.header a:hover, a.fundraising-link:hover {
     text-decoration: underline #FF0066;
     text-underline-offset: 10px;
 }
@@ -178,6 +178,26 @@ i.fab:hover{
     background-size: 100% 100%;
 }
 
+.card-top.five{
+    background: url("../../media/fiona.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.card-top.six{
+    background: url("../../media/ruth.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.card-top.seven{
+    background: url("../../media/victor.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.card-top.eight{
+    background: url("../../media/ibe.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
 .card-bottom{
     display: flex;
     flex-direction: column;
@@ -186,6 +206,19 @@ i.fab:hover{
     height: 166px;
     text-align: left;
     padding: 24px;
+}
+
+.card-bottom.extend{
+    height: 270px;
+    display: block;
+}
+
+.card-bottom.extend h5{
+    padding-bottom: 10px;
+}
+
+.card-bottom.extend p {
+    font-size: 0.75rem;
 }
 
 a.logo-link:hover {

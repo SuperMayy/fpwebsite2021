@@ -1,11 +1,46 @@
 import React from 'react'
 // import { Player } from 'video-react';
 // import portfolio from '../../media/portfolio.pdf'
+import HowWeHelp from '../Home/HowWeHelp';
 import about from '../../media/about-header-pic.png'
 import './about.css'
 import {Link} from 'react-router-dom';
 
 const About = () => {
+  const howWeHelpData = [
+    {
+      name: "Dr. Fiona Igwe ",
+      extraClass: "five",
+      link: null,
+      noLink: true,
+      description: `Dr. Fiona Igwe is the founder of Founder of Fionita’s Project and advocate for health equity. 
+      Fiona was also instrumental in the decision of UEA Vice-Chancellor David Richardson to Advance-HE’s Race Equality Charter in October 2018. Alongside leading the ‘Decolonising UEA’ campaign, she is the mind behind Eradicate Hate [an anti-racism campaign] and an anonymous reporting system enabling students and staff to report hate crimes attributed to race.
+      `
+    },
+    {
+      name: "Ruth Hayles",
+      extraClass: "six",
+      link: "kenya",
+      noLink: true,
+      description: `Ruth Hayles sits on the board of directors as our secretary. She is a King’s College London alumna and has more than 30 years working experience within senior roles.
+      Ruth shares with Fionita her extensive transferable skills, experience and expertise drawn from a wide cross-section of specialist areas. Ruth uses her vast array of honed skills to support, guide and maintain Fionita’s growth, development, and success.
+      `
+    },
+    {
+      name: "Victor Amadigwe ",
+      extraClass: "seven",
+      link: "nigeria",
+      noLink: true,
+      description: `Victor Amadigwe sits on the board of directors as the Legal Advisor for Fionita’s Project. He is a senior solicitor and director at a London based Law Centre. Victor is a philanthropist and has given back to various communities in the UK and Nigeria, he is also an advocate for homelessness in London. `
+    },
+    {
+      name: "Dr. Ibe Nathans",
+      extraClass: "eight",
+      link: "remote",
+      noLink: true,
+      description: `Dr. Ibe Nathans sits on the board of directors as our Medical Officer. He is a practicing GP Consultant with Beechwood Medical Centre, London, UK, and is also involved in humanitarian, free medical missions and medical education and awareness and medical advocacy.`
+    }
+  ]
     return (
         <div>
             <div className="about-landing">
@@ -15,6 +50,7 @@ const About = () => {
             src={about}
             alt="collage"
             />
+            <HowWeHelp data={howWeHelpData} title="OUR FOUNDER & DIRECTORS"/>
             {/* <Player
             className="about-landing"
             playsInline

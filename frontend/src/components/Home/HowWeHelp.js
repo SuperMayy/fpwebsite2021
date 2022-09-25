@@ -1,15 +1,25 @@
 import React from 'react'
 import Card from '../generalComponents/Card'
 
-const HowWeHelp = () => {
+const HowWeHelp = ({data, title}) => {
     return (
         <div className="how-we-help">
-            <h1>HOW WE HELP</h1>
+            <h1>{title}</h1> 
             <div className="card-container">
-                <Card name="The United Kingdom" extraClass="one" link="uk"/>
-                <Card name="Kenya" extraClass="two" link="kenya"/>
-                <Card name="Nigeria" extraClass="three" link="nigeria"/>
-                <Card name="Remote" extraClass="four" link="remote"/>
+                {
+                    data.map((a, index) => {
+                        return (
+                            <Card 
+                              name={a.name}
+                              extraClass={a.extraClass} 
+                              link={a.link}
+                              noLink={a.noLink} 
+                              description={a.description}
+                              key={index}
+                            />
+                        )
+                    })
+                }
             </div>
         </div>
     )
